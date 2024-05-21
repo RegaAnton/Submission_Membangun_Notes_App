@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="note-item.js" defer></script>
+    <!-- Include custom element script -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notes App</h1>
+
+      <!-- Formulir Tambah Catatan -->
+      <form id="add-note-form">
+        <div>
+          <label for="note-title">Judul:</label>
+          <input type="text" id="note-title" required />
+        </div>
+        <div>
+          <label for="note-body">Isi:</label>
+          <textarea id="note-body" rows="4" required></textarea>
+        </div>
+        <button type="submit">Tambah Catatan</button>
+      </form>
+
+      <ul id="notes-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
